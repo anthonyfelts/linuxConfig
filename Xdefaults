@@ -1,0 +1,70 @@
+! urxvt
+
+URxvt*geometry:                115x40
+!URxvt*geometry:                75x45
+!URxvt*font: xft:Liberation Mono:pixelsize=14:antialias=false:hinting=true
+URxvt*font: xft:Inconsolata:pixelsize=13:antialias=true:hinting=true
+!URxvt*font: xft:System San Francisco Display:pixelsize=8:antialias=true:hinting=true
+URxvt*boldFont: xft:Inconsolata:bold:pixelsize=13:antialias=false:hinting=true
+!URxvt*boldFont: xft:Liberation Mono:bold:pixelsize=14:antialias=false:hinting=true
+URxvt*depth:                24
+URxvt*borderless: 1
+URxvt*scrollBar:            false
+URxvt*saveLines:  10000
+URxvt.transparent:      true
+URxvt*.shading: 10
+
+! Meta modifier for keybindings
+!URxvt.modifier: super
+
+!! perl extensions
+URxvt.perl-ext:             default,url-select,clipboard
+
+! url-select (part of urxvt-perls package)
+URxvt.keysym.M-u:           perl:url-select:select_next
+URxvt.url-select.autocopy:  true
+URxvt.url-select.button:    2
+URxvt.url-select.launcher:  firefox
+URxvt.url-select.underline: true
+
+! Nastavuje kopirovani
+URxvt.keysym.Shift-Control-V: perl:clipboard:paste
+URxvt.keysym.Shift-Control-C:   perl:clipboard:copy
+
+! disable the stupid ctrl+shift 'feature'
+URxvt.iso14755: false
+URxvt.iso14755_52: false
+
+!urxvt color scheme:
+
+!URxvt*background: #2B2B2B
+!URxvt*foreground: #DEDEDE
+URxvt*background: #101321
+URxvt*foreground: #FFFAF5
+
+URxvt*colorUL: #86a2b0
+
+! black
+URxvt*color0  : #2E2E2E
+URxvt*color8  : #555555
+! red
+URxvt*color1  : #FF260D
+URxvt*color9  : #FF4250
+! green
+URxvt*color2  : #9AE204
+URxvt*color10 : #B8E36D
+! yellow
+URxvt*color3  : #FFC400
+URxvt*color11 : #FFD852
+! blue
+URxvt*color4  : #00A1F9
+URxvt*color12 : #00A5FF
+! magenta
+URxvt*color5  : #805BB5
+URxvt*color13 : #AB7AEF
+! cyan
+URxvt*color6  : #00DDEF
+URxvt*color14 : #74FCF3
+! white
+URxvt*color7  : #FEFFFF
+URxvt*color15 : #FEFFFF
