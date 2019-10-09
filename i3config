@@ -215,3 +215,4 @@ bar {
 # Custom configs
 exec feh --bg-scale ~/wallpaper/cyber77.jpg
 bindsym Control+Mod1+l exec i3lock  --color "$bg-color"
+#bindsym Control+Mod1+l exec i3lock -i ~/wallpaper/cyber77.jpg
