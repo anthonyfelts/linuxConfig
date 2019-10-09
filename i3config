@@ -29,11 +29,11 @@ font pango:Fira Code 9
 
 # Customized Colors
 
-set $bg-color		#101321
-set $inactive-bg-color	#242424
-set $text-color		#00A1F9
-set $inactive-text-color #575757
-set $urgent-bg-color	#FF260D
+set $bg-color		#141413
+set $inactive-bg-color	#141413
+set $text-color		#0a9dff
+set $inactive-text-color #666462
+set $urgent-bg-color	#ff2c46
 
 # Disable title bar
 for_window [class="^.*"] border pixel 1
@@ -189,11 +189,12 @@ bindsym XF86HomePage	     exec firefox
 bindsym XF86Sleep 	     exec i3lock --color "$bg-color"
 
 # window colors
-#			border			background	text		indicator
-client.focused		$bg-color		$bg-color	$text-color	#00DDEF
-client.urgent		$urgent-bg-color	$urgent-bg-color $text-color    #00FF00
-#client.focused_inactive
-#client.unfocused
+#			                      border			      background	      text		      indicator
+client.focused		          $bg-color		      $bg-color   	    $text-color	  #fade3e
+client.urgent		            $urgent-bg-color  $urgent-bg-color  $bg-color     #fade3e
+client.focused_inactive     #ffffff           $bg-color	        $text-color	  #fade3e
+client.unfocused            #ffffff           $bg-color	        $text-color	  #fade3e
+
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
@@ -207,7 +208,7 @@ bar {
 		separator $757575
 		#		   border	background	text
 		focused_workspace  $bg-color	$bg-color	$text-color
-		urgent_workspace   $urgent-bg-color $urgent-bg-color $text-color
+		urgent_workspace   $urgent-bg-color $urgent-bg-color $bg-color
 		inactive_workspace $inactive-bg-color $inactive-bg-color $inactive-text-color
 	}
 }

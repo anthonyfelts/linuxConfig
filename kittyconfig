@@ -74,12 +74,12 @@ box_drawing_scale 0.001, 1, 1.5, 2
 
 #: Cursor customization {{{
 
-cursor #cccccc
+cursor #fade3e
 
 #: Default cursor color
 
 #cursor_text_color #111111
-cursor_text_color #ffc400
+cursor_text_color #242321
 
 #: Choose the color of text under the cursor. If you want it rendered
 #: with the background color of the cell underneath instead, use the
@@ -435,7 +435,7 @@ tab_fade 0.25 0.5 0.75 1
 #: can change the number of cells used by adding/removing entries to
 #: this list.
 
-tab_separator " ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ"
+tab_separator " ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ"
 
 #: The separator between tabs in the tab bar when using separator as
 #: the tab_bar_style.
@@ -462,8 +462,8 @@ inactive_tab_font_style normal
 
 #foreground #dddddd
 #background #000000
-foreground #fffaf5
-background #101321
+foreground #f8f6f2
+background #141413
 
 
 #: The foreground and background colors
@@ -497,12 +497,12 @@ dim_opacity 0.75
 #: How much to dim text that has the DIM/FAINT attribute set. One
 #: means no dimming and zero means fully dimmed (i.e. invisible).
 
-selection_foreground #000000
+selection_foreground #141413
 
 #: The foreground for text selected with the mouse. A value of none
 #: means to leave the color unchanged.
 
-selection_background #fffacd
+selection_background #f8f6f2
 
 #: The background for text selected with the mouse.
 
@@ -513,42 +513,42 @@ selection_background #fffacd
 
 #color0 #000000
 #color8 #767676
-color0 #2e2e2e
-color8 #555555
+color0 #1c1b1a
+color8 #666462
 #: black
 
 #color1 #cc0403
 #color9 #f2201f
-color1 #ff260d
-color9 #ff4250
+color1 #ff2c46
+color9 #ff00a0
 #: red
 
 #color2  #19cb00
 #color10 #23fd00
-color2  #9ae204
-color10 #b8e36d
+color2  #aeee00
+color10 #faff4a
 #: green
 
 #color3  #cecb00
 #color11 #fffd00
-color3  #ffc400
-color11 #ffd852
+color3  #ffa724
+color11 #f4cf86
 #: yellow
 
-color4  #805bb5
-color12 #00a5ff
+color4  #0a9dff
+color12 #48c6ff
 #: blue
 
-color5  #805bb5
-color13 #ab7aef
+color5  #833c9f
+color13 #ff9eb8
 #: magenta
 
-color6  #00ddef
-color14 #74fcf3
+color6  #00efff
+color14 #6bd1d9
 #: cyan
 
-color7  #feffff
-color15 #feffff
+color7  #e5e5e5
+color15 #f3f3f3
 #: white
 
 #: }}}
