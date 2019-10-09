@@ -190,11 +190,16 @@ bindsym XF86Sleep 	     exec i3lock --color "$bg-color"
 
 # window colors
 #			                      border			      background	      text		      indicator
-client.focused		          $bg-color		      $bg-color   	    $text-color	  #fade3e
-client.urgent		            $urgent-bg-color  $urgent-bg-color  $bg-color     #fade3e
-client.focused_inactive     #ffffff           $bg-color	        $text-color	  #fade3e
-client.unfocused            #ffffff           $bg-color	        $text-color	  #fade3e
-
+# client.focused		          $text-color		      $bg-color   	    $text-color	  #fade3e
+# client.urgent		            $urgent-bg-color  $urgent-bg-color  $bg-color     #fade3e
+# client.focused_inactive     $text-color $bg-color	        $text-color	  #fade3e
+# client.unfocused            $text-color $bg-color	        $text-color	  #fade3e
+# class                 border  backgr. text    indicator child_border
+client.focused          #333333 #285577 #ffffff #fade3e   #242321
+client.focused_inactive #333333 #5f676a #ffffff #454136   #242321
+client.unfocused        #333333 #222222 #888888 #454136   #242321
+client.urgent           #333333 #900000 #ffffff #fade3e   #242321
+client.placeholder      #333333 #0c0c0c #ffffff #000000   #242321
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
