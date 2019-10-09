@@ -199,13 +199,14 @@ client.unfocused            #ffffff           $bg-color	        $text-color	  #f
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-        status_command i3status
-        #status_command i3blocks -c ~/.config/i3blocks/config
+  status_command i3status
+  #status_command i3blocks -c ~/.config/i3blocks/config
 	#font pango:System San Francisco Display 8
 	position top
 	colors {
 		background $bg-color
-		separator $757575
+    statusline #f8f6f2
+		separator #0a9dff
 		#		   border	background	text
 		focused_workspace  $bg-color	$bg-color	$text-color
 		urgent_workspace   $urgent-bg-color $urgent-bg-color $bg-color
