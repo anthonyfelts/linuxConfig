@@ -1,15 +1,16 @@
 ! urxvt
 
-URxvt*geometry:                115x40
-!URxvt*geometry:                75x45
-URxvt*font: xft:Liberation Mono:pixelsize=11:antialias=true:hinting=true
+!URxvt*geometry:                115x40
+URxvt*geometry:                240x84
+!URxvt*font: xft:Liberation Mono:pixelsize=11:antialias=true:hinting=true
 !URxvt*font: xft:Inconsolata:pixelsize=13:antialias=true:hinting=true
-!URxvt*font: xft:System San Francisco Display:pixelsize=8:antialias=true:hinting=true
+URxvt*font: xft:Terminess Powerline:pixelsize=13:antialias=true:hinting=true
+!URxvt*font: xft:Fira Code:pixelsize=8:antialias=true:hinting=true !TODO
 !URxvt*boldFont: xft:Inconsolata:bold:pixelsize=13:antialias=false:hinting=true
 !URxvt*boldFont: xft:Liberation Mono:bold:pixelsize=10:antialias=false:hinting=true
-URxvt*boldFont: xft:Liberation Mono:pixelsize=11:antialias=false:hinting=true
+URxvt*boldFont: xft:Terminess Powerline:pixelsize=8:antialias=false:hinting=true
 
-URxvt*depth:                24
+URxvt*depth:                32
 URxvt*borderless: 1
 URxvt*scrollBar:            false
 URxvt*saveLines:  10000
