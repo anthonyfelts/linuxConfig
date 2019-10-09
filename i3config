@@ -32,7 +32,7 @@ font pango:Fira Code 9
 set $bg-color		#141413
 set $inactive-bg-color	#141413
 set $text-color		#0a9dff
-set $inactive-text-color #666462
+set $inactive-text-color #857f78
 set $urgent-bg-color	#ff2c46
 
 # Disable title bar
@@ -49,7 +49,9 @@ bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
 #bindsym $mod+d exec dmenu_run
-bindsym $mod+d exec rofi -show run -lines 3 -eh 2 -width 100 -padding 400 -opacity "85" -bw 0 -bc "$bg-color" -bg "bg-color" -fg "$text-color" -hlbg "$bg-color" -hlfg "9575cd" -font "Fira Code 12"
+#bindsym $mod+d exec rofi -show run -modi run -location 1 -width 100 -lines 2 -line-margin 0 -line-padding 1 -separator-style none -font "mono 10" -columns 9 -bw 0 -disable-history -hide-scrollbar -color-window "#222222, #222222, #b1b4b3" -color-normal "#222222, #b1b4b3, #222222, #005577, #b1b4b3" -color-active "#222222, #b1b4b3, #222222, #007763, #b1b4b3" -color-urgent "#222222, #b1b4b3, #222222, #77003d, #b1b4b3" -kb-row-select "Tab" -kb-row-tab ""
+
+bindsym $mod+d exec rofi -show run
 
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
@@ -218,6 +220,8 @@ bar {
 		inactive_workspace $inactive-bg-color $inactive-bg-color $inactive-text-color
 	}
 }
+
+bindsym $mod+Shift+f exec firefox
 
 # Custom configs
 exec feh --bg-scale ~/wallpaper/cyber77.jpg
