@@ -4,6 +4,9 @@ set wrapmargin=8
 set number
 set encoding=utf-8
 
+"" Background Fix
+let &t_ut=''
+
 "" Color scheme
 colorscheme badwolf
 
@@ -30,3 +33,11 @@ nnoremap <silent> <S-t> :tabnew<CR>
 
 "" Remove whitespace with f5
 nnoremap <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar><CR>
+
+"" Whitespace highlighting
+highlight ExtraWhitespace ctermbg=white guibg=white
+match ExtraWhitespace /\s\+$/
+autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
+autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
+autocmd InsertLeave * match ExtraWhitespace /\s\+$/
+autocmd BufWinLeave * call clearmatches()
