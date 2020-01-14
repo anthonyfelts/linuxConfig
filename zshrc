@@ -103,6 +103,7 @@ alias ls='ls --color=auto'
 alias ll='ls -al --color=auto'
 alias c='clear'
 alias cc='clear && ls -al --color=auto'
+alias starwars='telnet towel.blinkenlights.nl'
 scrape() {
   wget -r -l1 -H -t1 -nd -N -np -erobots=off "$1" 
 }

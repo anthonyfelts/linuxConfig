@@ -14,6 +14,8 @@ colorscheme badwolf
 set laststatus=2
 set noshowmode
 
+set spelllang=en_us
+
 "" Indent Guides TODO
 "let g:indent_guides_enable_on_vim_startup = 1
 "let g:indent_guides_auto_colors = 0
@@ -41,3 +43,23 @@ autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
 autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
 autocmd InsertLeave * match ExtraWhitespace /\s\+$/
 autocmd BufWinLeave * call clearmatches()
+
+"" LaTeX
+let g:livepreview_previewer = 'zathura'
+
+"" Tab navigation like Firefox
+" nnoremap <C-S-tab> :tabprevious<CR>
+" nnoremap <C-tab>   :tabnext<CR>
+" nnoremap <C-t>     :tabnew<CR>
+" inoremap <C-S-tab> <Esc>:tabprevious<CR>i
+" inoremap <C-tab>   <Esc>:tabnext<CR>i
+" inoremap <C-t>     <Esc>:tabnew<CR>
+nnoremap <C-k> :tabprevious<CR>
+nnoremap <C-j>   :tabnext<CR>
+nnoremap <C-t>     :tabnew<CR>
+inoremap <C-k> <Esc>:tabprevious<CR>i
+inoremap <C-j>   <Esc>:tabnext<CR>i
+inoremap <C-t>     <Esc>:tabnew<CR>
+
+"" Text Wrapping
+set formatoptions-=t

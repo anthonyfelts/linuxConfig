@@ -1,8 +1,24 @@
 ### Aplacations to install
 kitty
 zsh
+Fira Code
+
+vim
+badwolf
+lightline
+latex-live https://github.com/xuhdev/vim-latex-live-preview#readme
 
 nmap
 pdfcrack
 
 cloc
+NetworkManager
+xathura - pdf
+xathura-pdf-mupdf
+
+
+for eduroam
+use nm-connection-editor
+
+LaTeX
+texlive-most
